@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Greg's List Project</title>
+  <meta name="description" content="First version of an HTML/CSS implementation of the search result page for Gregslist.">
+  <link rel="stylesheet" href="normalize.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+  <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="cf main-nav">
+    <header><h1 class="pull-left">Greg's List</h1></header>
+    <ul class="pull-right">
+      <li><a href="#">Post</a></li>
+      <li><a href="#">Account</a></li>
+    </ul>
+  </nav>
+  <main>
+    <form class="form-inline">
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputEmail3">Email address</label>
+        <input type="email" class="form-control" placeholder="Search software jobs">
+      </div>
+      <button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </form>
+
+    <nav>
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&#60; prev</span>
+          </a>
+        </li>
+        <li><a href="#">1 to 100 of 179</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">next &#62;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section>
+      <ul class="list-unstyle jobs">
+        <li>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <time datetime="2016-06-22">June 22</time>
+          <a href="#">Technical Project Manager</a>
+          <span>Midtown East</span>
+        </li>
+        <li>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <time datetime="2016-06-21">June 21</time>
+          <a href="#">Frontend Developer</a>
+          <span>SoHo</span>
+        </li>
+        <li>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <time datetime="2016-06-20">June 20</time>
+          <a href="#">Senior Python Developer / Cofounder</a>
+          <span>Flatiron</span>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+
+</html>
